@@ -1,0 +1,134 @@
+.logo-bca{
+    /* border: 1px solid; */
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+
+    position: relative;
+
+    height: 15dvh;
+}
+.logo-bca img{
+    position: absolute;
+    padding-left: 4rem;
+    bottom: 20%;
+}
+
+.welcome-message{
+    padding-left: 4rem;
+
+    font-size: 2rem;
+    /* font-weight: bold; */
+    color: white;
+}
+.welcome-message .small{
+    font-size: 1rem;
+}
+.welcome-message .big{
+    font-weight: bold;
+}
+
+/* bagian Cek Saldo */
+.cek-saldo{
+    /* border: 1px solid; */
+    border-radius: 20px 30px 10px 20px;
+    background: white;
+    box-shadow: var(--shadow);
+    width: 80%;
+
+    position: relative;
+
+    color: white;
+    justify-self: center;
+    align-self: center;
+}
+.cek-saldo::before{
+    content: '';
+    border-radius: 20px 30px 10px 20px;
+    box-shadow: var(--shadow);
+    background: var(--light-blue);
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    left: -10px;
+    top: -10px;
+    z-index: -999;
+}
+
+.cek-saldo .top{
+    /* border: 1px solid; */
+    border-radius: 10px 20px 0 0;
+    background: var(--brown-gradient);
+
+    padding: 1rem;
+
+    display: flex;
+    gap: 1rem;
+}
+.cek-saldo .top div{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+.cek-saldo .top div h3{
+    margin: 0;
+
+    font-weight: normal;
+}
+.cek-saldo .top div h4{
+    margin: 0;
+
+    font-weight: normal;
+}
+
+.cek-saldo .bottom{
+    padding-left: 1rem;
+    padding-right: 2rem;
+
+    color: black;
+}
+.cek-saldo .bottom h2{
+    margin: 0;
+    margin-top: 1rem;
+
+    font-weight: bold;
+}
+.cek-saldo .bottom div{
+    /* border: 1px solid; */
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.cek-saldo .lihat-transaksi hr{
+    color: var(--blue);
+}
+.cek-saldo .lihat-transaksi div{
+    position: relative;
+
+    display: flex;
+    gap: 1rem;
+}
+.cek-saldo .lihat-transaksi h4{
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    margin: 0;
+
+    color: var(--blue);
+}
+.cek-saldo .lihat-transaksi div img{
+    position: absolute;
+    left: 25%;
+    top: 5%;
+
+    display: flex;
+    gap: 1rem;
+}
+
+/* bagian quick access */
+
+

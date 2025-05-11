@@ -1,0 +1,70 @@
+body{
+    /* border: 1px solid; */
+    margin: 0;
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    
+}
+.logo-bca{
+    /* border: 1px solid; */
+    align-self: center;
+}
+
+.login-buttons{
+    /* border: 1px solid; */
+
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    gap: 1rem;
+}
+
+.bottom-buttons{
+    /* border: 1px solid; */
+    border-radius: 20px;
+    background: var(--lighter-blue);
+    box-shadow: var(--shadow);
+    width: 80%;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+
+    position: absolute;
+    bottom: 20%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+    gap: 1rem;
+}
+
+hr{
+    width: 90%;
+
+    position: absolute;
+    bottom: 15%;
+
+    align-self: center;
+}
+
+footer{
+    margin: 0;
+    background: var(--light-blue);
+    color: white;
+    
+    position: absolute;
+    bottom: 0;
+
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+    font-size: large;
+
+}
+
+footer span{
+    color: var(--lighter-blue);
+}
