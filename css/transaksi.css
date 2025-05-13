@@ -1,0 +1,40 @@
+body{
+    height: var(--h);
+}
+
+.list{
+    padding-top: 3rem;
+
+    display: flex;
+    flex-direction: column;
+}
+.list .item{
+    background: white;
+    
+    position: relative;
+
+    text-decoration: none;
+    color: var(--blue);
+}
+.list .item h2{
+    padding-left: 4rem;
+    margin-bottom: 0px;
+}
+.list .item img{
+    position: absolute;
+    right: 15%;
+    bottom: 50%;
+}
+.list .item hr{
+    width: 80%;
+}
+
+.content-list{
+    /* border: 1px solid; */
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    align-items: center;
+}

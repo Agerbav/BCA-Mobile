@@ -1,6 +1,8 @@
 :root{
     /* colors */
+    --gray: #CACACA;
     --blue-gradient: linear-gradient(to bottom right, #004474, #0963A3);
+    --lighter-blue-gradient: linear-gradient(to bottom right, #B0D2E9, #CFEBFF);
     --brown-gradient: linear-gradient(to bottom right, #742700, #A35B09);
     --dark-blue: #004474;
     --blue: #0963A3;
@@ -15,13 +17,16 @@
 
 html{
     /* border: 1px solid; */
-    
+    /* position: relative; */
     height: var(--h);
-    /* width: var(--w); */
+    margin: 0;
+    padding: 0;
 }
 
 body{
     margin: 0;
+    height: var(--h);
+    position: relative;
 }
 
 
@@ -64,6 +69,7 @@ body{
 
 .small-white-button{
     /* border: 1px solid; */
+    display: block;
     border-radius: 100px;
     background: white;
     box-shadow: var(--shadow);
@@ -73,4 +79,102 @@ body{
 
     align-content: center;
     text-align: center;
+}
+.small-blue-button{
+     /* border: 1px solid; */
+    display: block;
+    border-radius: 20px;
+    background: var(--lighter-blue);
+    box-shadow: var(--shadow);
+    width: 4rem;
+    height: 4rem;
+    /* padding: 1rem; */
+
+    align-content: center;
+    text-align: center;
+}
+
+.header{
+    /* border: 1px solid; */
+    border-radius: 0 0 15px 15px;
+    box-shadow: var(--shadow);
+    background: var(--blue-gradient);
+
+    position: relative;
+
+    height: 15dvh;
+}
+.header img{
+    position: absolute;
+    left: 5%;
+    bottom: 25%;
+}
+.header h2{
+    position: absolute;
+    margin: 0;
+    left: 10%;
+    bottom: 20%;
+
+    color: white;
+    font-weight: normal;
+}
+
+footer{
+    position: relative;
+    bottom: -20px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar{
+    width: 100%;
+    height: 8dvh;
+    position: fixed;
+    background: var(--lighter-blue-gradient);
+    padding-top: 1rem;
+    bottom: 0px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5rem;
+}
+.navbar .left{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+}
+.navbar .right{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.2rem;
+}
+
+.navbar-item{
+    background: var(--lighter-blue-gradient);
+    color: var(--lighter-blue);
+    text-decoration: none;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.navbar-item img{
+    width: 30px;
+}
+
+.navbar-center-item{
+    border-radius: 100px;
+    background: var(--blue-gradient);
+    width: 70px;
+    height: 70px;
+
+    position: absolute;
+    top: -20px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

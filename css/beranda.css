@@ -1,17 +1,4 @@
-.logo-bca{
-    /* border: 1px solid; */
-    border-radius: 15px;
-    box-shadow: var(--shadow);
 
-    position: relative;
-
-    height: 15dvh;
-}
-.logo-bca img{
-    position: absolute;
-    padding-left: 4rem;
-    bottom: 20%;
-}
 
 .welcome-message{
     padding-left: 4rem;
@@ -19,6 +6,9 @@
     font-size: 2rem;
     /* font-weight: bold; */
     color: white;
+}
+.welcome-message p{
+    margin-top: 1rem;
 }
 .welcome-message .small{
     font-size: 1rem;
@@ -36,6 +26,7 @@
     width: 80%;
 
     position: relative;
+    margin-bottom: 3rem;
 
     color: white;
     justify-self: center;
@@ -113,7 +104,7 @@
     display: flex;
     gap: 1rem;
 }
-.cek-saldo .lihat-transaksi h4{
+.cek-saldo .lihat-transaksi div h4{
     padding-left: 1rem;
     padding-bottom: 1rem;
     margin: 0;
@@ -121,14 +112,74 @@
     color: var(--blue);
 }
 .cek-saldo .lihat-transaksi div img{
-    position: absolute;
-    left: 25%;
-    top: 5%;
 
     display: flex;
     gap: 1rem;
 }
 
 /* bagian quick access */
+
+.quick-access{
+    border-radius: 20px 20px 0 0;
+    padding: 1rem;
+    background: white;
+    height: 35dvh;
+    width: 90%;
+    position: relative;
+
+    justify-self: center;
+}
+.quick-access::before{
+    content: '';
+    border-radius: 20px;
+    width: 110%;
+    height: 110%;
+    background: var(--blue);
+
+    position: absolute;
+    top: -30px;
+    right: -25px;
+    z-index: -999;
+}
+
+.quick-access div{
+    padding-top: 1rem;
+
+    display: flex;
+    gap: 1rem;
+}
+.quick-access div h3{
+    /* border: 1px solid; */
+    padding-left: 4rem;
+    width: fit-content;
+    justify-self: center;
+        
+    color: var(--blue);
+    font-size: larger;
+    font-weight: bold;
+}
+
+.quick-access-buttons{
+    /* border: 1px solid; */
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+.quick-access-buttons .add-new{
+    background: var(--lighter-blue);
+    border-radius: 100px;
+
+    width: 40px;
+    height: 40px;
+    
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-grow: 1; */
+    align-items: center;
+    justify-content: center;
+}
+
+
 
 
