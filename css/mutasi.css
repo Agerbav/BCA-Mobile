@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif; /* ganti jadi wanted sans */
+    background: #f0f0f0;
+}
+
+/* .header {
+    background: url(../assets/Group\ 42.png);
+    color: #f0f0f0;
+    font-size: 20px;
+    position: relative;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    height: 9vh;
+    display: flex;
+
+}
+
+.header-content {
+    display: flex;
+    align-items: flex-end;
+    gap: 5px;
+    margin: 18px;
+} */
+
+.back{
+    margin: 4px;
+}
+
+
+.back {
+    margin-right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.container {
+    padding: 20px;
+}
+
+h2 {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: var(--dark-blue);
+}
+
+.rekening-card {
+    background: var(--brown-gradient);
+    color: #f0f0f0;
+    border-radius: 15px;
+    padding: 15px;
+    height: 80px;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.card-icon {
+    margin: 5px;
+    position: absolute;
+
+}
+
+.card-info {
+    display: flex;
+    flex-direction: row;
+    gap: 110px;
+    align-items: flex-end;
+
+}
+
+.card-number {
+    font-size: 16px;
+}
+
+.card-name {
+    font-size: 14px;
+}
+
+.transaction-type {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 20px;
+}
+
+.transaction-type > .tab {
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    background: #175f92;
+    color: white;
+    font-size: 14px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.transaction-type .sub-tabs {
+    display: flex;
+    background: #cacaca;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.transaction-type .sub-tabs .tab {
+    flex: 1;
+    padding: 10px 0;
+    background: transparent;
+    border: none;
+    color: #515151;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.transaction-type .sub-tabs .tab:first-child {
+    border-right: 1px solid #898989;
+}
+
+.transaction-type .sub-tabs .tab.active {
+    background: linear-gradient(90deg, #175F92 0%, #0C5D9F 100%);
+    color: white;
+}
+
+.period-select select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.next-button {
+    margin-left: 68%;
+    width: 115px;
+    height: 39px;
+    padding: 12px;
+    background: #0056a7;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+

@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    font-family: 'arial', sans-serif; /* ganti jadi wanted sans */
+    background: #f0f0f0;
+}
+
+/* .header {
+    background: url('../assets/Group\ 42.png');
+    background-size: cover;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    height: 9vh;
+    display: flex;
+    align-items: flex-end;
+    padding: 18px;
+    color: white;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.header-title {
+    font-size: 20px;
+} */
+
+.title{
+    font-size: 20px;
+    margin: 10% 5% 5% 5%;
+    color: var(--dark-blue);
+}
+
+
+.penjelasan {
+    margin: 8% 5%;
+    color: #515151;
+    font-size: 14px;
+}
+
+.confirmation{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30%;
+    
+}
+
+.confirmation button{
+    align-content: center;
+    font-size: 16px;
+    color: #f0f0f0;
+    font-weight: bold;
+    width: 40%;
+    background-color: #898989;
+    border: none;
+    border-radius: 10px;
+    height: 39px;
+}
+
+.confirmation a{
+    text-decoration: none;
+    color: #f0f0f0;
+}
+
+.confirmation .active{
+    align-content: center;
+    font-size: 16px;
+    color: #f0f0f0;
+    font-weight: bold;
+    width: 40%;
+    background-color: var(--light-blue);
+    border: none;
+    border-radius: 10px;
+    height: 39px;
+}

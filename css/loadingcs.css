@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    font-family: 'arial', sans-serif; /* ganti jadi wanted sans */
+    background: #f0f0f0;
+}
+
+/* .header {
+    background: url('../assets/Group\ 42.png');
+    background-size: cover;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    height: 9vh;
+    display: flex;
+    align-items: flex-end;
+    padding: 18px;
+    color: white;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap:18px;
+}
+
+.header-title {
+    font-size: 20px;
+} */
+
+.loadingtext{
+    margin-top: 33vh;
+
+}
+.loadingtext p{
+    color: var(--dark-blue);
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+
+}
+.loadingtext img{
+    margin-top: 5%;
+    margin-left: 45%;
+
+}

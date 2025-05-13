@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    font-family: 'arial', sans-serif; /* ganti jadi wanted sans */
+    background: #757575a1;
+}
+
+/* .header {
+    background: url('../assets/Group\ 42.png');
+    background-size: cover;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    height: 9vh;
+    display: flex;
+    align-items: flex-end;
+    padding: 18px;
+    color: white;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-title {
+    font-size: 20px;
+} */
+
+.container {
+    background: #ffffff00;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 16px;
+    color: var(--dark-blue);
+    margin-top: 35px;
+    margin-bottom: 8px;
+}
+
+.input-select select {
+    width: 90%;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background: transparent;
+    outline: none;
+    appearance: none;
+}
+
+.dropdown{
+    margin-left: 15px;
+}
+
+.input-field {
+    width: 92%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 14px;
+    background: white;
+    outline: none;
+}
+
+.nominal-input {
+    display: flex;
+    align-items: center;
+}
+
+.nominal-input span {
+    margin-right: 8px;
+    color: #555;
+}
+
+.nominal-input input {
+    flex: 1;
+    font-size: 14px;
+    background: transparent;
+    width: 80%;
+    background: white;
+    border: 1px solid #cacaca;
+    border-radius: 10px;
+    padding: 12px;
+    font-size: 14px;
+}
+
+.transfer-button {
+    margin-top: 30px;
+    float: right;
+    width: 37%;
+    padding: 8px;
+    background: #0e3b5ad5;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.success-popup{
+    position: absolute;
+    top: 25%;
+    margin: 5%;
+    background-color: #ffffff;
+    width: 90%;
+    height: 26%;
+    border-radius: 20px;
+}
+
+.head-popup{
+    background-color: var(--dark-blue);
+    height: 51px;
+    border-radius: 10px 10px 0 0;
+    padding: 10px;
+}
+
+.head-popup p{
+    color: #f0f0f0;
+    margin-left: 10px;
+}
+
+.transfer-details{
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.transfer-name{
+    color: var(--dark-blue);
+    font-size: 16px;
+    margin: 0;
+
+}
+.transfer-amount{
+    margin: 0;
+    color: var(--dark-blue);
+    font-size: 34px;
+}
+.transfer-time{
+    margin-top: 30px;
+    color: var(--dark-blue);
+    font-size: 13px;
+}

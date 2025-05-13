@@ -4,6 +4,8 @@
     --blue-gradient: linear-gradient(to bottom right, #004474, #0963A3);
     --lighter-blue-gradient: linear-gradient(to bottom right, #B0D2E9, #CFEBFF);
     --brown-gradient: linear-gradient(to bottom right, #742700, #A35B09);
+    --green-gradient: linear-gradient(to bottom right, #42C01C, #1F5A0D);
+    --red-gradient: linear-gradient(to bottom right, #D42C1D, #6E170F);
     --dark-blue: #004474;
     --blue: #0963A3;
     --light-blue: #236B9E;
@@ -35,6 +37,7 @@ body{
 }
 
 .blue-button{
+    border: none;
     border-radius: 20px;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     color: white;
@@ -177,4 +180,48 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.popup-success{
+    margin-top: 50%;
+    padding: 0;
+    border-radius: 20px;
+    background: var(--green-gradient);
+    width: 70%;
+    height: 4rem;
+    z-index: 999;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    align-self: center;
+    justify-self: center;
+    color: white;
+    font-weight: normal;
+}
+.popup-success h2{
+    margin: 0;
+}
+
+.popup-failed{
+    margin-top: 50%;
+    padding: 0;
+    border-radius: 20px;
+    background: var(--red-gradient);
+    width: 70%;
+    height: 4rem;
+    z-index: 999;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    align-self: center;
+    justify-self: center;
+    color: white;
+    font-weight: normal;
+}
+.popup-failed h2{
+    margin: 0;
 }

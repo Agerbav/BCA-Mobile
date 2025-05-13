@@ -123,8 +123,9 @@
     border-radius: 20px 20px 0 0;
     padding: 1rem;
     background: white;
-    height: 35dvh;
+    height: 40%;
     width: 90%;
+    overflow-y: hidden;
     position: relative;
 
     justify-self: center;
@@ -132,39 +133,56 @@
 .quick-access::before{
     content: '';
     border-radius: 20px;
-    width: 110%;
-    height: 110%;
+    width: 120%;
+    height: 120%;
     background: var(--blue);
 
-    position: absolute;
+    /* position: absolute;
     top: -30px;
     right: -25px;
-    z-index: -999;
-}
+    z-index: -999;*/
 
+    align-self: center;
+}
+.quick-access span{
+    
+}
 .quick-access div{
     padding-top: 1rem;
 
-    display: flex;
+    /* display: flex; */
+    justify-self: center;
+    display: grid;
+    grid-template-columns: repeat(4, max-content);
+    width: 80%;
     gap: 1rem;
 }
 .quick-access div h3{
     /* border: 1px solid; */
-    padding-left: 4rem;
+    margin: 0;
     width: fit-content;
     justify-self: center;
         
     color: var(--blue);
     font-size: larger;
-    font-weight: bold;
+    font-weight: bolder;
+}
+.quick-access div span{
+    /* border: 1px solid; */
+    align-items: center;
+    align-self: center;
 }
 
 .quick-access-buttons{
     /* border: 1px solid; */
+    margin: 0;
+    padding: 0;
+    width: 80%;
     display: flex;
     gap: 1.5rem;
     justify-content: center;
     align-items: center;
+    
 }
 .quick-access-buttons .add-new{
     background: var(--lighter-blue);
@@ -178,6 +196,7 @@
     /* flex-grow: 1; */
     align-items: center;
     justify-content: center;
+    justify-self: center;
 }
 
 
