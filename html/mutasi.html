@@ -3,61 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mutasi Rekening</title>
+    <title>BCA Mobile Mutasi Rekening</title>
     <link rel="stylesheet" href="../css/mutasi.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <div class="header">
-        <a href="beranda.html"><img src="../assets/Back arrow.svg" alt=""></a>
+        <a href="transaksi.html"><img src="../assets/Back arrow.svg" alt="" id="back-arrow"></a>
         <h2>Mutasi Rekening</h2>
     </div>
 
     <div class="container">
-        <h2>Rekening</h2>
-        <div class="rekening-card">
+        <div class="info">
+            <h2>Rekening</h2>
+            <div class="rekening-card">
             <div class="card-icon"><img src="../assets/grid.svg" alt=""></div>
             <div class="card-info">
                 <div class="card-number">123 456 7890</div>
                 <div class="card-name">Muhammad Mirza</div>
             </div>
         </div>
+        </div>
 
-        <h2>Jenis Transaksi</h2>
-        <div class="transaction-type">
-            <button class="tab active">Semua</button>
-            <div class="sub-tabs">
-                <button class="tab">Pemasukan</button>
-                <button class="tab">Pengeluaran</button>
+        <div class="transaction">
+            <h2>Jenis Transaksi</h2>
+            <div class="transaction-type">
+                <button class="tab active">Semua</button>
+                <div class="sub-tabs">
+                    <button class="tab">Pemasukan</button>
+                    <button class="tab">Pengeluaran</button>
+                </div>
             </div>
         </div>
 
-        <h2>Periode</h2>
-        <div class="period-select">
-            <select>
-                <option>Hari ini</option>
-                <option>Minggu ini</option>
-                <option>Bulan ini</option>
-                <option>Periode kustom</option>
+        <div class="periode">
+    <h2>Periode</h2>
+    <div class="period-select">
+        <select id="periode-select">
+            <option>Hari ini</option>
+            <option>Minggu ini</option>
+            <option>Bulan ini</option>
+            <option>Periode kustom</option>
+        </select>
+    </div>
+    <div class="periode-kustom" style="display:none; margin-top: 1rem;">
+        <label for="tgl-awal">Tanggal Awal:</label>
+        <input type="date" id="tgl-awal" />
+        <label for="tgl-akhir" style="margin-left: 1rem;">Tanggal Akhir:</label>
+        <input type="date" id="tgl-akhir" />
+    </div>
+</div>
 
-            </select>
+        <div class="button-wrapper">
+            <button class="next-button"><a href="detailmutasi.html">Next</a></button>
         </div>
-
-        <button class="next-button"><a href="detailmutasi.html">Next</a></button>
     </div>
 
-    
+    <script>
+    const periodeSelect = document.getElementById('periode-select');
+    const periodeKustomDiv = document.querySelector('.periode-kustom');
+
+    periodeSelect.addEventListener('change', () => {
+        if (periodeSelect.value === 'Periode kustom') {
+            periodeKustomDiv.style.display = 'block';
+        } else {
+            periodeKustomDiv.style.display = 'none';
+        }
+    });
+
+    const tabs = document.querySelectorAll('.transaction-type .tab');
+    const subTabs = document.querySelectorAll('.sub-tabs .tab');
+
+    tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            if (tab.textContent === 'Semua') {
+                tab.classList.add('active');
+                subTabs.forEach(st => st.classList.remove('active'));
+            }
+        });
+    });
+
+    subTabs.forEach(subTab => {
+        subTab.addEventListener('click', () => {
+            subTabs.forEach(st => st.classList.remove('active'));
+            subTab.classList.add('active');
+            tabs.forEach(tab => {
+                if (tab.textContent === 'Semua') tab.classList.remove('active');
+            });
+        });
+    });
+</script>
+
 </body>
 <footer>
     <div class="navbar">
         <div class="left">
-            <a href="beranda.html" class="navbar-item"><img src="../assets/Home image.svg" alt="">Beranda</a>
-            <a href="transaksi.html" class="navbar-item"><img src="../assets/Transaksi2.svg" alt="">Transaksi</a>
+            <a href="beranda.html" class="navbar-item">
+                <div class="icon">
+                    <img src="../assets/Home image.svg" alt="" id="icon-beranda">
+                </div>
+                <div class="menu">Beranda</div>
+            </a>
+            <a href="transaksi.html" class="navbar-item">
+                <div class="icon">
+                    <img src="../assets/Transaksi2.svg" alt="" id="icon-transaksi">
+                </div>
+                <div class="menu">Transaksi</div>
+            </a>
         </div>
         <a href="" class="navbar-center-item"><img src="../assets/QRIS Text.svg" alt=""></a>
         <div class="right">
-            <a href="" class="navbar-item"><img src="../assets/Bell.svg" alt="">Notifikasi</a>
-            <a href="" class="navbar-item"><img src="../assets/Akun saya.svg" alt="">Akun Saya</a>
+            <a href="" class="navbar-item">
+                <div class="icon">
+                    <img src="../assets/Bell.svg" alt="" id="icon-notifikasi">
+                </div>
+                <div class="menu">Notifikasi</div>
+            </a>
+            <a href="akunsaya.html" class="navbar-item">
+                <div class="icon">
+                    <img src="../assets/Akun saya.svg" alt="" id="icon-akun">
+                </div>
+                <div class="menu">Akun Saya</div>
+            </a>
         </div>
     </div>
 </footer>

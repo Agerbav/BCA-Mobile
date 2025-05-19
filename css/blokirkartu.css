@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: 'arial', sans-serif; /* ganti jadi wanted sans */
+    font-family: Wanted;
     background: #f0f0f0;
 }
 
@@ -28,7 +28,11 @@ body {
 
 .info{
     font-size: 20px;
-    margin: 10% 5% 5% 5%;
+    margin-top: 5%;
+    width: 70%;
+    max-width: 600px;
+    justify-self: center;
+    justify-items: center;
 }
 
 .rekening-card {
@@ -36,9 +40,15 @@ body {
     color: #f0f0f0;
     border-radius: 15px;
     padding: 15px;
-    height: 7vh;
+    height: 17vh;
     display: flex;
     margin-bottom: 20px;
+    width: 100%;
+    align-self: center;
+}
+
+.info p {
+    width: 100%;
 }
 
 .card-icon {
@@ -52,7 +62,8 @@ body {
     flex-direction: row;
     gap: 110px;
     align-items: flex-end;
-
+    width: 100%;
+    justify-content: space-between;
 }
 
 .card-number {
@@ -61,20 +72,26 @@ body {
 
 .card-name {
     font-size: 14px;
+    text-align: right;
 }
 
 .persetujuan {
-    margin: 8% 5%;
+    margin-top: 3rem;
     color: #515151;
     font-size: 14px;
-
+    width: 70%;
+    max-width: 600px;
+    justify-self: center;
+    text-align: justify;
 }
 
 .confirmation{
+    margin-top: 3rem;
     display: flex;
-    justify-content: space-evenly;
-    margin-top: 30%;
-    
+    justify-self: center;
+    justify-content: space-between;
+    width: 70%;
+    max-width: 600px;
 }
 
 .confirmation button{
@@ -87,6 +104,7 @@ body {
     border: none;
     border-radius: 10px;
     height: 39px;
+    font-family: Wanted;
 }
 
 .confirmation a{

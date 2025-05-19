@@ -3,27 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Transfer Antar Rekening</title>
+    <title>BCA Mobile Transfer Antar Rekening</title>
     <link rel="stylesheet" href="../css/transfer.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <div class="header">
-        <a href="beranda.html"><img src="../assets/Back arrow.svg" alt=""></a>
-        <h2>Trasnfer Antar Rekening</h2>
+        <a href="transaksi.html"><img src="../assets/Back arrow.svg" alt="" id="back-arrow"></a>
+        <h2>Transfer Antar Rekening</h2>
     </div>
 
     <div class="container">
         <h2>Bank Penerima</h2>
         <div class="input-select">
             <select>
-                <option>Nama bank</option>
+                <option>Nama Bank</option>
+                <option>Bank BCA</option>
+                <option>Bank Mandiri</option>
+                <option>Bank Danamon</option>
+                <option>Bank Jago</option>
+                <option>Bank Mega</option>
+                <option>Bank Panin</option>
+                <option>Bank Permata</option>
+                <option>Bank BLUE BCA</option>
+                <option>Bank Victoria</option>
+                <option>Bank Jateng</option>
             </select>
             <img src="../assets/Vector 2.png" alt="" class="dropdown">
         </div>
 
         <h2>No. Rekening Penerima</h2>
-        <input type="text" class="input-field" placeholder="No. rekening">
+        <input type="text" class="input-field" placeholder="No. Rekening">
 
         <h2>Nominal Transfer</h2>
         <div class="nominal-input">
@@ -31,20 +41,76 @@
             <input type="text" placeholder="Nominal">
         </div>
 
-        <button class="transfer-button">Transfer</button>
+        <button id="myBtn" class="transfer-button">Transfer</button>
     </div>
-</body>
 <footer>
     <div class="navbar">
         <div class="left">
-            <a href="beranda.html" class="navbar-item"><img src="../assets/Home image.svg" alt="">Beranda</a>
-            <a href="transaksi.html" class="navbar-item"><img src="../assets/Transaksi2.svg" alt="">Transaksi</a>
+            <a href="beranda.html" class="navbar-item">
+                <div class="icon">
+                    <img src="../assets/Home image.svg" alt="" id="icon-beranda">
+                </div>
+                <div class="menu">Beranda</div>
+            </a>
+            <a href="transaksi.html" class="navbar-item">
+                <div class="icon">
+                    <img src="../assets/Transaksi2.svg" alt="" id="icon-transaksi">
+                </div>
+                <div class="menu">Transaksi</div>
+            </a>
         </div>
         <a href="" class="navbar-center-item"><img src="../assets/QRIS Text.svg" alt=""></a>
         <div class="right">
-            <a href="" class="navbar-item"><img src="../assets/Bell.svg" alt="">Notifikasi</a>
-            <a href="" class="navbar-item"><img src="../assets/Akun saya.svg" alt="">Akun Saya</a>
+            <a href="" class="navbar-item">
+                <div class="icon">
+                    <img src="../assets/Bell.svg" alt="" id="icon-notifikasi">
+                </div>
+                <div class="menu">Notifikasi</div>
+            </a>
+            <a href="akunsaya.html" class="navbar-item">
+                <div class="icon">
+                    <img src="../assets/Akun saya.svg" alt="" id="icon-akun">
+                </div>
+                <div class="menu">Akun Saya</div>
+            </a>
         </div>
     </div>
 </footer>
 </html>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+     <div class="success-popup">
+        <div class="head-popup">
+            <p>Transfer dana berhasil</p>
+        </div>
+        <div class="transfer-details">
+            <p class="transfer-name"> To: John Doe</p>
+            <p class="transfer-amount">Rp1.000.000,00</p>
+            <p class="transfer-time">19 May 2025 | 22:34</p>
+        </div>
+  </div>
+
+</div>
+
+<script>
+var modal = document.getElementById("myModal");
+var btn = document.getElementById("myBtn");
+var span = document.getElementsByClassName("close")[0];
+
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>

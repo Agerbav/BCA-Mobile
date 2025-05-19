@@ -3,63 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BCA Mobile Transaksi</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/transaksi.css">
 </head>
 <body>
     <div class="header">
-        <a href="beranda.html"><img src="../assets/Back arrow.svg" alt=""></a>
+        <a href="beranda.html"><img src="../assets/Back arrow.svg" alt="" id="back-arrow"></a>
         <h2>Transaksi</h2>
+        </div>
+        <div class="list">
+
+  <!-- KEUANGAN -->
+  <div class="item">
+    <div class="item-header">
+      <h2>Keuangan</h2>
+      <img src="../assets/Open Arrow.svg" alt="" class="toggle-arrow">
     </div>
-    <div class="list">
-        <a href="" class="item">
-            <h2>Keuangan</h2>
-            <img src="../assets/Open Arrow.svg" alt="">
-            <hr>
-        </a>
-        <a href="" class="item">
-            <h2>Telekomunikasi</h2>
-            <img src="../assets/Open Arrow.svg" alt="">
-            <hr>
-            <div class="content-list" style="display: none;""> <!-- pas dipencet harusnya muncul, bagian js -->
-                <a href="transaksi/handphone.html" class="blue-button">Handphone</a>
-                <a href="" class="blue-button">Telephone</a>
-            </div>
-        </a>
-        <a href="" class="item"> 
-            <h2>Tagihan</h2>
-            <img src="../assets/Open Arrow.svg" alt="">
-            <hr>
-            <div class="content-list" style="display: none;"> <!-- pas dipencet harusnya muncul, bagian js -->
-                <a href="transaksi/tagihan air.html" class="blue-button">Air</a>
-                <a href="" class="blue-button">PLN Pascabayar</a>
-                <a href="" class="blue-button">Internet</a>
-                <a href="" class="blue-button">BPJS</a>
-            </div>
-        </a>
-        <a href="" class="item">
-            <h2>Sektor Pemerintahan</h2>
-            <img src="../assets/Open Arrow.svg" alt="">
-            <hr>
-        </a>
-        <a href="" class="item">
-            <h2>Layanan Lainnya</h2>
-            <img src="../assets/Open Arrow.svg" alt="">
-            <hr>
-        </a>
+    <hr>
+    <div class="content-list" style="display: none;">
+      <a href="mutasi.html" class="blue-button">Mutasi</a>
+      <a href="pembayaranpulsa.html" class="blue-button">Pembayaran Pulsa</a>
+      <a href="pembayarantagihan.html" class="blue-button">Pembayaran Tagihan</a>
+      <a href="transfer.html" class="blue-button">Transfer</a>
     </div>
+  </div>
+
+  <!-- TELEKOMUNIKASI -->
+  <div class="item">
+    <div class="item-header">
+      <h2>Telekomunikasi</h2>
+      <img src="../assets/Open Arrow.svg" alt="" class="toggle-arrow">
+    </div>
+    <hr>
+    <div class="content-list" style="display: none;">
+      <a href="transaksi/handphone.html" class="blue-button">Handphone</a> <!--ini gw ga tau link apaan-->
+      <a href="#" class="blue-button">Telephone</a>
+    </div>
+  </div>
+
+  <!-- TAGIHAN -->
+  <div class="item">
+    <div class="item-header">
+      <h2>Tagihan</h2>
+      <img src="../assets/Open Arrow.svg" alt="" class="toggle-arrow">
+    </div>
+    <hr>
+    <div class="content-list" style="display: none;">
+      <a href="transaksi/tagihan air.html" class="blue-button">Air</a><!--ini gw ga tau link apaan-->
+      <a href="#" class="blue-button">PLN Pascabayar</a><!--ini gw ga tau link apaan-->
+      <a href="#" class="blue-button">Internet</a><!--ini gw ga tau link apaan-->
+      <a href="#" class="blue-button">BPJS</a><!--ini gw ga tau link apaan-->
+    </div>
+  </div>
+
+  <!-- SEKTOR PEMERINTAHAN -->
+  <div class="item">
+    <div class="item-header">
+        <h2>Sektor Pemerintahan</h2>
+        <img src="../assets/Open Arrow.svg" alt="" class="toggle-arrow">
+    </div>
+    <hr>
+    <div class="content-list" style="display: none;">
+       
+    </div>
+</div>
+
+<div class="item">
+    <div class="item-header">
+        <h2>Layanan Lainnya</h2>
+        <img src="../assets/Open Arrow.svg" alt="" class="toggle-arrow">
+    </div>
+    <hr>
+    <div class="content-list" style="display: none;">
+    </div>
+</div>
+
+
+<script>
+    const arrows = document.querySelectorAll('.toggle-arrow');
+
+arrows.forEach(arrow => {
+  arrow.addEventListener('click', function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+
+    const item = arrow.closest('.item');
+    const content = item.querySelector('.content-list');
+    const isVisible = content.style.display === 'block';
+
+    // Tutup semua yang lain
+    document.querySelectorAll('.content-list').forEach(el => {
+      el.style.display = 'none';
+    });
+
+    // Toggle yang diklik
+    if (!isVisible) {
+      content.style.display = 'block';
+    }
+
+    
+  });
+});
+</script>
+
+
 </body>
 <footer>
     <div class="navbar">
         <div class="left">
-            <a href="beranda.html" class="navbar-item"><img src="../assets/Home image.svg" alt="">Beranda</a>
-            <a href="transaksi.html" class="navbar-item"><img src="../assets/Transaksi2.svg" alt="">Transaksi</a>
+            <a href="beranda.html" class="navbar-item">
+                <div class="icon">
+                    <img src="../assets/Home image.svg" alt="" id="icon-beranda">
+                </div>
+                <div class="menu">Beranda</div>
+            </a>
+            <a href="transaksi.html" class="navbar-item">
+                <div class="icon">
+                    <img src="../assets/Transaksi2.svg" alt="" id="icon-transaksi">
+                </div>
+                <div class="menu">Transaksi</div>
+            </a>
         </div>
         <a href="" class="navbar-center-item"><img src="../assets/QRIS Text.svg" alt=""></a>
         <div class="right">
-            <a href="" class="navbar-item"><img src="../assets/Bell.svg" alt="">Notifikasi</a>
-            <a href="" class="navbar-item"><img src="../assets/Akun saya.svg" alt="">Akun Saya</a>
+            <a href="" class="navbar-item">
+                <div class="icon">
+                    <img src="../assets/Bell.svg" alt="" id="icon-notifikasi">
+                </div>
+                <div class="menu">Notifikasi</div>
+            </a>
+            <a href="akunsaya.html" class="navbar-item">
+                <div class="icon">
+                    <img src="../assets/Akun saya.svg" alt="" id="icon-akun">
+                </div>
+                <div class="menu">Akun Saya</div>
+            </a>
         </div>
     </div>
 </footer>

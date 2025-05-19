@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: 'arial', sans-serif; /* ganti jadi wanted sans */
+    font-family: Wanted;
     background: #f0f0f0;
 }
 
@@ -28,21 +28,31 @@ body {
 
 .title{
     font-size: 20px;
-    margin: 10% 5% 5% 5%;
+    margin-top: 5%;
     color: var(--dark-blue);
+    width: 70%;
+    max-width: 600px;
+    justify-self: center;
 }
 
 
 .penjelasan {
-    margin: 8% 5%;
+    margin-top: 3rem;
     color: #515151;
     font-size: 14px;
+    width: 70%;
+    max-width: 600px;
+    justify-self: center;
+    text-align: justify;
 }
 
 .confirmation{
     display: flex;
-    justify-content: space-evenly;
-    margin-top: 30%;
+    margin-top: 3rem;
+    justify-self: center;
+    justify-content: space-between;
+    width: 70%;
+    max-width: 600px;
     
 }
 
@@ -56,6 +66,7 @@ body {
     border: none;
     border-radius: 10px;
     height: 39px;
+    font-family: Wanted;
 }
 
 .confirmation a{

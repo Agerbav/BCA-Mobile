@@ -1,11 +1,11 @@
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} */
 
 body {
-    font-family: 'Arial', sans-serif; /* ganti jadi wanted sans */
+    font-family: Wanted;
     background: #f0f0f0;
 }
 /* 
@@ -29,23 +29,40 @@ body {
 } */
 
 .top {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     margin-top: 40px;
     margin-left: 30px;
 }
 
 .title-mutasi {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     color: var(--dark-blue);
     font-size: 20px;
 }
 
 .title-date {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     color: #515151;
     font-size: 14px;
 }
 
-
+#transaction-wrapper {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    padding-bottom: 10rem;
+}
 
 .search-bar {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     display: flex;
     margin-top: 10px;
     justify-content: center;
@@ -53,30 +70,46 @@ body {
 }
 
 .search-bar input {
-    padding: 8px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    padding: 12px;
     width: 80%;
     border: 1px solid #CACACA;
     border-radius: 10px;
+    font-family: Wanted;
 }
 
 .search-bar button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     margin: auto;
     border: none;
     cursor: pointer;
 }
 
 .date-section {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     background: #D9D9D9;
     padding: 1px 0;
 }
 
 .date-section h2 {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     margin: 10px 15px;
     font-size: 13px;
     color: #515151;
 }
 
 .transaction {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     background: white;
     display: flex;
     align-items: center;
@@ -85,10 +118,16 @@ body {
 }
 
 .transaction:first-child {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     border-top: none;
 }
 
 .avatar {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     width: 40px;
     height: 40px;
     background: #D9D9D9;
@@ -97,6 +136,9 @@ body {
 }
 
 .transaction-details {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -104,22 +146,34 @@ body {
 }
 
 .transaction-name {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-size: 13px;
     margin-bottom: 7px;
 }
 
 .transaction-desc {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-size: 11px;
     color: #898989;
 }
 
 .transaction-time {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-size: 11px;
     color: #898989;
     margin-top: 1px;
 }
 
 .transaction-amount {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     margin-left: 10px;
 }
 

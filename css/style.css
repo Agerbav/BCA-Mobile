@@ -1,7 +1,23 @@
+@font-face {
+  font-family: Wanted;
+  src: url(/fonts/WantedSans-Regular.otf);
+}
+
+@font-face {
+  font-family: Wanted;
+  src: url(/fonts/WantedSans-Regular.otf);
+  font-weight: 500;
+}
+
+#back-arrow {
+    width: 0.5rem;
+}
+
 :root{
     /* colors */
     --gray: #CACACA;
     --blue-gradient: linear-gradient(to bottom right, #004474, #0963A3);
+    --dark-blue-gradient: linear-gradient(to bottom right, #032844, #0f4d79);
     --lighter-blue-gradient: linear-gradient(to bottom right, #B0D2E9, #CFEBFF);
     --brown-gradient: linear-gradient(to bottom right, #742700, #A35B09);
     --green-gradient: linear-gradient(to bottom right, #42C01C, #1F5A0D);
@@ -14,7 +30,7 @@
     --w: 393px;
     --h: 852px;
 
-    --shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    --shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 html{
@@ -51,6 +67,7 @@ body{
     text-decoration: none;
     font-size: large;
     font-weight: bolder;
+    font-family: Wanted;
 }
 
 .white-button{
@@ -68,6 +85,7 @@ body{
     text-decoration: none;
     font-size: large;
     font-weight: bolder;
+    font-family: Wanted;
 }
 
 .small-white-button{
@@ -82,6 +100,7 @@ body{
 
     align-content: center;
     text-align: center;
+    font-family: Wanted;
 }
 .small-blue-button{
      /* border: 1px solid; */
@@ -95,22 +114,25 @@ body{
 
     align-content: center;
     text-align: center;
+    font-family: Wanted;
 }
 
 .header{
     /* border: 1px solid; */
     border-radius: 0 0 15px 15px;
     box-shadow: var(--shadow);
-    background: var(--blue-gradient);
+    background: var(--dark-blue-gradient);
 
     position: relative;
 
     height: 15dvh;
+    font-family: Wanted;
 }
 .header img{
     position: absolute;
     left: 5%;
     bottom: 25%;
+    width: 30vh;
 }
 .header h2{
     position: absolute;
@@ -120,6 +142,7 @@ body{
 
     color: white;
     font-weight: normal;
+    font-family: Wanted;
 }
 
 footer{
@@ -127,6 +150,7 @@ footer{
     bottom: -20px;
     margin: 0px;
     padding: 0px;
+    font-family: Wanted;
 }
 
 .navbar{
@@ -134,13 +158,13 @@ footer{
     height: 8dvh;
     position: fixed;
     background: var(--lighter-blue-gradient);
-    padding-top: 1rem;
     bottom: 0px;
-
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 5rem;
+    font-family: Wanted;
+    padding-top: 1rem;
 }
 .navbar .left{
     display: flex;
@@ -148,6 +172,7 @@ footer{
     justify-content: center;
     gap: 2rem;
 }
+
 .navbar .right{
     display: flex;
     flex-direction: row;
@@ -156,16 +181,25 @@ footer{
 }
 
 .navbar-item{
-    background: var(--lighter-blue-gradient);
     color: var(--lighter-blue);
     text-decoration: none;
-
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
 }
-.navbar-item img{
-    width: 30px;
+
+.navbar-item .menu{
+    margin-bottom: 1vh;
+}
+.navbar-item .icon{
+    height: 5vh;
+    width: 5vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
 }
 
 .navbar-center-item{
@@ -173,13 +207,31 @@ footer{
     background: var(--blue-gradient);
     width: 70px;
     height: 70px;
-
     position: absolute;
     top: -20px;
-    
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+#icon-beranda {
+    width: 100%;
+    margin-top: 20%;
+}
+
+#icon-transaksi {
+    width: 80%;
+    margin-bottom: 5%;
+}
+
+#icon-notifikasi {
+    width: 90%;
+    margin-top: 10%;
+}
+
+#icon-akun {
+    width: 80%;
+    margin-bottom: 5%;
 }
 
 .popup-success{
@@ -221,6 +273,7 @@ footer{
     justify-self: center;
     color: white;
     font-weight: normal;
+    font-family: Wanted;
 }
 .popup-failed h2{
     margin: 0;

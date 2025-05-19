@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: 'Poppins', sans-serif; /* ganti jadi wanted sans */
+    font-family: Wanted;
     background: #f0f0f0;
 }
 
@@ -42,6 +42,28 @@ h2 {
     font-size: 16px;
     margin-bottom: 8px;
     color: var(--dark-blue);
+    font-family: Wanted;
+    width: 100%;
+}
+
+.info{
+    font-size: 20px;
+    margin-top: 5%;
+    width: 70%;
+    max-width: 600px;
+    justify-self: center;
+    justify-items: center;
+}
+
+.transaction, .periode, .button-wrapper {
+    width: 70%;
+    max-width: 600px;
+    justify-self: center;
+}
+
+.button-wrapper {
+    display: flex;
+    justify-content: right;
 }
 
 .rekening-card {
@@ -49,9 +71,11 @@ h2 {
     color: #f0f0f0;
     border-radius: 15px;
     padding: 15px;
-    height: 80px;
+    height: 17vh;
     display: flex;
     margin-bottom: 20px;
+    width: 100%;
+    align-self: center;
 }
 
 .card-icon {
@@ -65,7 +89,8 @@ h2 {
     flex-direction: row;
     gap: 110px;
     align-items: flex-end;
-
+    width: 100%;
+    justify-content: space-between;
 }
 
 .card-number {
@@ -74,6 +99,7 @@ h2 {
 
 .card-name {
     font-size: 14px;
+    text-align: right;
 }
 
 .transaction-type {
@@ -92,6 +118,7 @@ h2 {
     font-size: 14px;
     border-radius: 10px;
     cursor: pointer;
+    font-family: Wanted;
 }
 
 .transaction-type .sub-tabs {
@@ -110,6 +137,7 @@ h2 {
     font-size: 14px;
     font-weight: 500;
     cursor: pointer;
+    font-family: Wanted;
 }
 
 .transaction-type .sub-tabs .tab:first-child {
@@ -127,19 +155,19 @@ h2 {
     border-radius: 10px;
     border: 1px solid #ccc;
     margin-bottom: 20px;
+    font-family: Wanted;
 }
 
 .next-button {
-    margin-left: 68%;
     width: 115px;
     height: 39px;
-    padding: 12px;
-    background: #0056a7;
+    background: #175f92;
     color: white;
     border: none;
     border-radius: 10px;
     font-size: 16px;
     cursor: pointer;
+    font-family: Wanted;
 }
 
 a{
